@@ -11,12 +11,8 @@ import {
   roundSetAction,
 } from '../../getStore';
 import { WarriorType } from '../../services/app.types';
-import {
-  Archers,
-  Cavalry,
-  Pikemen,
-  warriorsArray,
-} from '../../services/constants';
+import { warriorsArray } from '../../services/constants';
+import { randomWarrior } from '../../services/utils';
 
 export interface Props {
   round: number;
@@ -25,15 +21,6 @@ export interface Props {
   setComputerChoice: Function;
   setBattleIsActive: Function;
 }
-
-const randomWarrior = (): WarriorType => {
-  const randomNum = Math.random();
-
-  if (randomNum <= 0.5) return Cavalry;
-  if (randomNum <= 0.75) return Archers;
-
-  return Pikemen;
-};
 
 export const WarriorsChoise: FC<Props> = ({
   round,

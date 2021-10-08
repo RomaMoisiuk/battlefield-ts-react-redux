@@ -25,7 +25,18 @@ export const Result: FC<Props> = ({ score, resetState }) => {
       <div className="result">
         <h2>{winner === 'Draw' ? 'It is Draw' : `${winner} won!!!`}</h2>
       </div>
-      <div className="reset">
+      <div className="result-scores">
+        <h3>Score</h3>
+        <div>
+          <div>
+            Humans score: <span>{human}</span>
+          </div>
+          <div>
+            Computers score: <span>{computer}</span>
+          </div>
+        </div>
+      </div>
+      <div className="result">
         <button onClick={handleReset}>Start New Game</button>
       </div>
     </div>

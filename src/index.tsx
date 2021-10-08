@@ -9,8 +9,6 @@ import getStore from './getStore';
 
 const store = getStore();
 
-console.log(store.getState());
-
 ReactDOM.render(
   <Provider store={store}>
     <App />

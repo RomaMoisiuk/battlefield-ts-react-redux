@@ -29,12 +29,14 @@ export const Battle: FC<Props> = ({
   setBattleIsActive,
   setScore,
 }) => {
+  const winner = checkWinner(humanWarrior, computerWarrior);
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       let humanScore = score.human;
       let computerScore = score.computer;
 
-      switch (checkWinner(humanWarrior, computerWarrior)) {
+      switch (winner) {
         case 'human':
           humanScore++;
           computerScore--;
@@ -70,6 +72,9 @@ export const Battle: FC<Props> = ({
         <div>
           Computers warrior: <b>{computerWarrior?.title}</b>
         </div>
+      </div>
+      <div className="round-result">
+        <h3>In this round winner is {winner}</h3>
       </div>
     </div>
   );
