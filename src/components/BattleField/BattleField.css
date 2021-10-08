@@ -1,0 +1,6 @@
+.battlefield-root {
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}

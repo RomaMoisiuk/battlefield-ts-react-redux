@@ -1,0 +1,16 @@
+.battle-root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.battle-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.battle-title {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,8 @@
+.warriors-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.warrior-item {
+  padding: 10px;
+}
