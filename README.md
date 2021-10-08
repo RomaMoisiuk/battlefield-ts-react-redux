@@ -1,4 +1,4 @@
-### Battlefield
+# Battlefield
 
 ## Follow next steps to start
 
